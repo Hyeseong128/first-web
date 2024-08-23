@@ -24,9 +24,8 @@
 <body-com class="d-flex bodyy">
 
 
-
   <!-- NavBar -->
-  <nav id="Home" class="navbar navbar-expand-lg fixed-top bg-dark" style="" data-bs-theme="dark">
+  <nav id="Home" class="navbar navbar-expand-lg fixed-top bg-black" style="" data-bs-theme="dark">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <img src="images/logo.png" class="card-img-top" style="width:150px" alt="...">
@@ -37,14 +36,14 @@
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           
           <li class="nav-item">
-            <a class="nav-link" href="01-home.html">Home</a>
+            <a class="nav-link" href="index.html">홈</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="02-community.html">Community</a>
+            <a class="nav-link" href="index2.html">커뮤니티</a>
           </li><li class="nav-item">
             <!-- Button trigger Login modal -->
             <button type="button" class="btn btn-secondary d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 40px;">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="#">로그인</a>
             </button>
           </li>
         </ul>
@@ -55,43 +54,42 @@
 
 
 
-  <!-- Modal -->
+  <!-- Modal 로그인-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">로그인</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- 로그인 폼 -->
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <label for="exampleInputEmail1" class="form-label">이메일</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <div id="emailHelp" class="form-text">이메일은 안전하게 보호됩니다.</div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <label for="exampleInputPassword1" class="form-label">비밀번호</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <label class="form-check-label" for="exampleCheck1">아이디 기억</label>
             </div>
-            <button type="submit" class="btn btn-primary">Create Account</button>
+            <button type="submit" class="btn btn-primary">회원가입</button>
           </form>
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-primary">확인</button>
         </div>
       </div>
     </div>
   </div>
  <!-- Navbar 끝 -->
-
 
 
 
