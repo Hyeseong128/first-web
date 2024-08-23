@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Page</title>
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+
+  </style>
+</head>
+
+<body-com class="d-flex bodyy">
+
+
+
+  <!-- NavBar -->
+  <nav id="Home" class="navbar navbar-expand-lg fixed-top bg-dark" style="" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <img src="images/logo.png" class="card-img-top" style="width:150px" alt="...">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="01-home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="02-community.html">Community</a>
+          </li><li class="nav-item">
+            <!-- Button trigger Login modal -->
+            <button type="button" class="btn btn-secondary d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 40px;">
+              <a class="nav-link" href="#">Login</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- 로그인 폼 -->
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- Navbar 끝 -->
+
+
+
+
+  <!-- 메인페이지 -->
+  <main class="container" style="margin-top: 156.66px; padding-left: 0px; padding-right: 0px;">
+    
+    <!-- row 여기 -->
+    <!-- 여기 div에는 aside와 section이 들어감 -->
+    <div class="row gy-5 gx-5">
+
+      <!-- aside 게시판 -->
+      <h1>게시판</h1>
+      <aside class="col-12 col-lg-2">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true" style="border-color: black; background-color: darkgray;">
+            자유게시판
+          </a>
+          <a href="#" class="list-group-item list-group-item-action" style="border-color: black;">여름에 꼭 봐야 할 영화 추천!</a>
+          <a href="#" class="list-group-item list-group-item-action" style="border-color: black;">기대되는 상영예정작</a>
+          <a href="#" class="list-group-item list-group-item-action" style="border-color: black;">명예의 전당</a>
+          <a class="list-group-item list-group-item-action disabled" style="border-color: black;" aria-disabled="true">영화 명장면 토론 (Closed)</a>
+        </div>
+      </aside>
+
+
+      <!-- section 게시글? -->
+      <section class="col-12 col-lg-10">
+        <article class="border-top border-bottom" style="height: 200px;">
+          <div class="article-head">
+            <h3>솔직히 OOO 감독 영화 다 별로 아니냐?</h3>
+            <h5>영화평론가</h5>
+          </div>
+          <p style="margin-bottom: 10px;">솔직히 요즘 사람들이 OOO 감독 영화만 맹목적으로 좋아하는 것 같은데, 내가 봤을 땐 다 똑같은 얘기만 반복하는 것 같음. 스토리도 진부하고 연출도 그닥 감동적이지 않은데 왜 이렇게 과대평가하는지 이해 안 됨. 나만 그렇게 생각하나? 진짜 요즘 영화 볼 거 없네...</p>
+          <div class="d-flex">
+            <a class="ms-auto" href="https://ecrm.police.go.kr/minwon/main">🚨</a>
+          </div>
+        </article>
+        <article class="border-top border-bottom" style="height: 200px;">
+          <div class="article-head">
+            <h3>이번에 개봉한 OOO, 진짜 시간 아까움ㅋㅋ</h3>
+            <h5>영화취향존중안함</h5>
+          </div>
+          <p style="margin-bottom: 10px;">어제 OOO 영화 보고 왔는데, 진짜 이런 망작을 돈 주고 본 내가 너무 한심함. 스토리도 엉망, 연기력도 영 꽝. 평론가들이 왜 그렇게 칭찬하는지 모르겠음. 솔직히 시간 낭비, 돈 낭비. 나만 그런가? 다들 보지 마세요, 시간 아깝습니다.</p>
+          <div class="d-flex">
+            <a class="ms-auto" href="https://ecrm.police.go.kr/minwon/main">🚨</a>
+          </div>
+        </article>
+        <article class="border-top border-bottom" style="height: 200px;">
+          <div class="article-head">
+            <h3>요즘 히어로 영화 보는 사람들 수준ㅋㅋ</h3>
+            <h5>현실직시</h5>
+          </div>
+          <p style="margin-bottom: 10px;">요즘 히어로 영화들 보면 다 똑같고 유치한데, 왜 이렇게 인기가 많은 거? 진짜 영화 보는 수준 떨어지는 거 티 나는 듯. 그냥 돈 벌려고 만드는 양산형 영화들에 왜 이렇게 열광하는지 이해 불가. 영화 좀 볼 줄 아는 사람은 히어로물 안 봄.</p>
+          <div class="d-flex">
+            <a class="ms-auto" href="https://ecrm.police.go.kr/minwon/main">🚨</a>
+          </div>
+        </article>
+        <article class="border-top border-bottom" style="height: 200px;">
+          <div class="article-head">
+            <h3>OOO 배우, 연기력도 없으면서 왜 이렇게 인기 많은 거임?</h3>
+            <h5>사실을말하는자</h5>
+          </div>
+          <p style="margin-bottom: 10px;">OOO 배우 솔직히 연기력 진짜 별로 아님? 그냥 외모 때문에 인기 많은 거 같은데, 그런 배우가 주연 맡는 영화는 솔직히 믿고 거름. 다들 왜 그 배우 연기 좋다고 하는지 모르겠음. 혹시 팬심 때문에 눈 가리고 아웅하는 거? 제대로 된 영화 좀 봅시다.</p>
+          <div class="d-flex">
+            <a class="ms-auto" href="https://ecrm.police.go.kr/minwon/main">🚨</a>
+          </div>
+        </article>
+      </section>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-secondary offset-10 col-2 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <p style="margin: 0px; padding: 0px;">게시글 제공</p>
+      </button>
+    </div>
+    <!-- aside와 section 끝 -->
+    <!-- 페이지네이션 시작 -->
+
+
+    <div class="container" style="height: 100px; margin-top: 50px;">
+      <div class="d-flex justify-content-center align-items-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Chat GPT는 연기도 잘해</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/criminal.png" class="d-block w-100" alt="header1.jpg">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-secondary">특이점은 온다</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>  
+  <!-- 메인 끝 -->
+  <!-- 푸터 시작 -->
+  <footer class="d-flex justify-content-center align-items-center ft">
+    <p class="text-center" style="margin-bottom: 0px;">[국민] [안혜성] [194602 - 04 - ******] 그냥 가져가면 굉장한 실례입니다.</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body-com>
+
+</html>

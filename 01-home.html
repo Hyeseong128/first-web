@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+    
+
+  </style>
+</head>
+
+<body-home class="d-flex bodyy">
+
+
+
+  <!-- NavBar -->
+  <nav id="Home" class="navbar navbar-expand-lg fixed-top bg-black" style="" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <img src="images/logo.png" class="card-img-top" style="width:150px" alt="...">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="01-home.html">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="02-community.html">커뮤니티</a>
+          </li><li class="nav-item">
+            <!-- Button trigger Login modal -->
+            <button type="button" class="btn btn-secondary d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 40px;">
+              <a class="nav-link" href="#">로그인</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Modal 로그인-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">로그인</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- 로그인 폼 -->
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">이메일</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">이메일은 안전하게 보호됩니다.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">비밀번호</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">아이디 기억</label>
+            </div>
+            <button type="submit" class="btn btn-primary">회원가입</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-primary">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- Navbar 끝 -->
+
+
+
+
+  <!-- 메인페이지 -->
+  <main class="container-xxl" style="margin-top: 56.66px; padding-left: 0px; padding-right: 0px;">
+    <!-- 헤더 -->
+    <!-- class="container-xxl" style="margin-top: 56.6px; padding-left: 0px; padding-right: 0px;" -->
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- 첫번째 -->
+          <div class="carousel-item active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PbMx7GEMzxk?si=U5PdWsyaWPXoOMiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <img src="images/header1.jpg" class="d-block w-100" alt="header1.jpg"> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>《#사랑의하츄핑》 윈터 OST 무삭제 비하인드 영상 대공개!❄️💖</h5>
+            </div>
+          </div>
+          <!-- 두번째 -->
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NVDLUJa5dac?si=r9RbbxzZM6WA2pFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>데드풀과 울버린</h5>
+              <p>화려한 액션</p>
+            </div>
+          </div>
+          <!-- 세번째 -->
+          <div class="carousel-item">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zi44N3PGvJw?si=2jxTW6vvYxCv7Nhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            <div class="carousel-caption d-none d-md-block">
+              <h5><임영웅│아임 히어로 더 스타디움></h5>
+              <p>“영웅시대가 저와 별의 이야기를 함께 써 내려가고 있다고 생각해요”</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- 헤더 끝 -->
+    <!-- 섹션 시작-->
+
+    <section class="container px-4">
+      <!-- 섹션 제목 -->
+      <div class="d-flex justify-content-center align-items-center" style="margin-top: 150px; margin-bottom: 20px;">
+        <h1 class="text-center boxoffice-text">박스 오피스</h1>
+      </div>
+      <!-- row 여깄다 -->
+      <div class="row gx-4 gy-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-bg-dark" style="height: 100;">
+            <img src="images/에이리언.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-plus">
+              <h5 class="card-title">에이리언: 로물루스</h5>
+              <p class="card-text">리들리 스콧 제작 · <맨 인 더 다크> 페데 알바레즈 감독의 숨 막히는 서바이벌 스릴러로 돌아오다!</p>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                예고편
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-bg-dark" style="height: 100;">
+            <img src="images/행복의 나라.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-plus">
+              <h5 class="card-title">행복의 나라</h5>
+              <p class="card-text">“이럴거면 재판은 왜 하는 겁니까!” 단 16일간 졸속으로 진행된 대한민국 최악의 정치 재판이 시작된다!</p>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                예고편
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-bg-dark" style="height: 100;">
+            <img src="images/늘봄가든.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-plus">
+              <h5 class="card-title">늘봄 가든</h5>
+              <p class="card-text">곤지암 정신병원, 경북 영덕횟집, 그리고... 늘봄가든.
+                그곳을 방문한 후 그들은 이유를 알 수 없는 기이하고 섬뜩한 일들을 겪게 되는데…</p>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                  예고편
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-bg-dark" style="height: 100;">
+            <img src="images/필사의 추격.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-plus">
+              <h5 class="card-title">필사의 추격</h5>
+              <p class="card-text">완벽한 변장술로 형사들을 크게 뺑이 치게 만들어 빅뺑이라 불리는 사기꾼 김인해(박성웅), 도망칠 곳 없는 제주에 발을 디딘 그들의 쫓고 쫓기는 대환장 추격이 시작된다!</p>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                예고편
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-bg-dark" style="height: 100;">
+            <img src="images/사랑의 하츄핑.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-plus">
+              <h5 class="card-title">사랑의 하츄핑</h5>
+              <p class="card-text">처음 본 순간, 한눈에 반해버렸어! 설레는 운명이 시작된 우리의 첫 만남!인생의 소울메이트를 꼭 만나길 바라는 ‘로미’. 우연한 기회에 ‘하츄핑’을 처음 본 뒤, 운명의 인연임을 알아본다.</p>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                예고편
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-bg-dark" style="height: 100;">
+            <img src="images/데드풀과 울버린.jpg" class="card-img-top" alt="...">
+            <div class="card-body card-body-plus">
+              <h5 class="card-title">데드풀과 울버린</h5>
+              <p class="card-text">히어로 생활에서 은퇴한 후, 평범한 중고차 딜러로 살아가던 ‘데드풀’이 예상치 못한 거대한 위기를 맞아 모든 면에서 상극인 ‘울버린’을 찾아가게 되며 펼쳐지는 도파민 폭발 액션 블록버스터</p>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                예고편
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+
+<figure>
+
+  <!-- Modal 예고편 -->
+  <!-- 에이리언 -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="border-color: white;">
+      <div class="modal-content" style="background-color: black; border-color: black;">
+        <div class="modal-header" style="background-color: black; border-color: black;">
+          <h1 class="modal-title fs-5" style="color: white;" id="exampleModalLabel">예고편</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rXpDoYtkWMs?si=y2svpSPsUu_j9BFi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-color: black;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-secondary" style="background-color: #40B5BC; border-color: #40B5BC;">예매하러 가기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 행복의 나라 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" style="border-color: white;">
+    <div class="modal-content" style="background-color: black; border-color: black;">
+      <div class="modal-header" style="background-color: black; border-color: black;">
+        <h1 class="modal-title fs-5" style="color: white;" id="exampleModalLabel">예고편</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center align-items-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xGLnWfrQVTs?si=9KJOCTzEwb9LDbEl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      
+        </div>
+      </div> <!-- 이 줄을 추가: modal-body 닫는 태그 -->
+      <div class="modal-footer" style="border-color: black;">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+        <button type="button" class="btn btn-secondary" style="background-color: #40B5BC; border-color: #40B5BC;">예매하러 가기</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- 늘봄 가든 -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="border-color: white;">
+      <div class="modal-content" style="background-color: black; border-color: black;">
+        <div class="modal-header" style="background-color: black; border-color: black;">
+          <h1 class="modal-title fs-5" style="color: white;" id="exampleModalLabel">예고편</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jvzbd3FIf48?si=mT7OZ5GaP34YhhgB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-color: black;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-secondary" style="background-color: #40B5BC; border-color: #40B5BC;">예매하러 가기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 필사의 추격 -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="border-color: white;">
+      <div class="modal-content" style="background-color: black; border-color: black;">
+        <div class="modal-header" style="background-color: black; border-color: black;">
+          <h1 class="modal-title fs-5" style="color: white;" id="exampleModalLabel">예고편</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zLjjCO5Gjp8?si=vPWh3iqLoAfMvX_q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-color: black;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-secondary" style="background-color: #40B5BC; border-color: #40B5BC;">예매하러 가기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 사랑의 하츄핑 -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="border-color: white;">
+      <div class="modal-content" style="background-color: black; border-color: black;">
+        <div class="modal-header" style="background-color: black; border-color: black;">
+          <h1 class="modal-title fs-5" style="color: white;" id="exampleModalLabel">예고편</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t8fdT4SsQao?si=zpVhnmRNGY97DwC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-color: black;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-secondary" style="background-color: #40B5BC; border-color: #40B5BC;">예매하러 가기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ㅡ데드풀과 울버린 -->
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="border-color: white;">
+      <div class="modal-content" style="background-color: black; border-color: black;">
+        <div class="modal-header" style="background-color: black; border-color: black;">
+          <h1 class="modal-title fs-5" style="color: white;" id="exampleModalLabel">예고편</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-center align-items-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NVDLUJa5dac?si=LP2Qo2UbmPlmsTSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer" style="border-color: black;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-secondary" style="background-color: #40B5BC; border-color: #40B5BC;">예매하러 가기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</figure>
+
+
+
+
+
+
+
+
+  <!-- 메인 끝 -->
+  <!-- 푸터 시작 -->
+  <footer class="d-flex justify-content-center align-items-center ft">
+    <p class="text-center" style="margin-bottom: 0px;">[국민] [안혜성] [194602 - 04 - ******] 그냥 가져가면 굉장한 실례입니다.</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body-home>
+
+</html>
